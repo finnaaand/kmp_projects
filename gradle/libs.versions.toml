@@ -1,0 +1,48 @@
+[versions]
+accompanistPager = "0.28.0"
+agp = "8.6.1"
+androidx-activityCompose = "1.9.3"
+androidx-ui-tooling = "1.7.4"
+coil = "3.0.0"
+compose-multiplatform = "1.7.0"
+composecalendar = "<version>"
+composecalendarVersion = "1.3.0"
+githubComposecalendar = "1.3.0"
+koin = "4.0.0"
+kotlin = "2.0.21"
+kotlinxDatetime = "0.6.0"
+ktor = "3.0.0"
+material3 = "1.3.1"
+navigationCompose = "2.8.0-alpha10"
+places = "4.1.0"
+
+[libraries]
+accompanist-pager = { module = "com.google.accompanist:accompanist-pager", version.ref = "accompanistPager" }
+accompanist-pager-indicators = { module = "com.google.accompanist:accompanist-pager-indicators", version.ref = "accompanistPager" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "androidx-ui-tooling" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidx-ui-tooling" }
+androidx-material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+coil-network-ktor = { group = "io.coil-kt.coil3", name = "coil-network-ktor3", version.ref = "coil" }
+composecalendar = { module = "com.github.boguszpawlowski:ComposeCalendar", version.ref = "composecalendar" }
+composecalendar-kotlinx-datetime = { module = "io.github.boguszpawlowski.composecalendar:kotlinx-datetime", version.ref = "githubComposecalendar" }
+composecalendar-v130 = { module = "com.github.boguszpawlowski:ComposeCalendar", version.ref = "composecalendarVersion" }
+github-composecalendar = { module = "io.github.boguszpawlowski.composecalendar:composecalendar", version.ref = "githubComposecalendar" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-compose-viewmodel = { module = "io.insert-koin:koin-compose-viewmodel", version.ref = "koin" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+places = { group = "com.google.android.libraries.places", name = "places", version.ref = "places" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinxSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
